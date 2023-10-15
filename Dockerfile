@@ -48,7 +48,6 @@ RUN rpm2cpio libprelude* | cpio -idmv
 RUN rpm2cpio gnutls* | cpio -idmv
 RUN rpm2cpio nettle* | cpio -idmv
 RUN rpm2cpio lib* | cpio -idmv
-RUN rpm2cpio *.rpm | cpio -idmv
 RUN rpm2cpio libtasn1* | cpio -idmv
 RUN rpm2cpio binutils* | cpio -idmv
 RUN rpm2cpio libtool-ltdl* | cpio -idmv
@@ -72,7 +71,6 @@ RUN cp /lib64/libpcre.so.1 \
   /usr/lib64/libsmime3.so \
   /usr/lib64/libnss3.so \
   /usr/lib64/libcrypt.so.1 \
-  /usr/lib64/libp11-kit.so.0 \
   /opt/app/bin/
 
 # Fix the freshclam.conf settings
