@@ -83,5 +83,3 @@ RUN zip -r9 --exclude="*test*" /opt/app/build/lambda.zip *.py bin
 
 WORKDIR /var/lang/lib/python3.11/site-packages
 RUN zip -r9 --exclude="*boto*" /opt/app/build/lambda.zip *
-
-WORKDIR /opt/app
